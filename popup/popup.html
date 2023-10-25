@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 500px;
+      }
+      button {
+        background-color: #336dab;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 10px;
+      }
+    </style>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script defer type="text/javascript" src="popup.js"></script>
+  </head>
+  <body>
+    <h1>Hide/Remove element on page</h1>
+    <h4>Please input the HTML elements to be hidden/removed and separate them by |</h4>
+    <label for="hideTag">Hide Tag: </label><input placeholder="tag1|tag2|..." value="link|script" type="text" id="hideTag"/>
+    <label for="hideId">Hide Id: </label><input placeholder="id1|id2|..." value="modal|popup" type="text" id="hideId"/>
+    <br/>
+    <label for="hideClass">Hide Class: </label><input placeholder="class1|class2|..." value="backdrop|curtain" type="text" id="hideClass"/>
+    <label for="remTag">Remove Tag: </label><input placeholder="tag1|tag2|..." value="link|script" type="text" id="remTag"/>
+    <br/>
+    <label for="remId">Remove Id: </label><input placeholder="id1|id2|..." value="blur" type="text" id="remId"/>
+    <label for="remClass">Remove Class: </label><input placeholder="class1|class2|..." value="blur" type="text" id="remClass"/>
+    <br/>
+    <button id="sendmessageid">Execute</button>
+    <p id="msg">[Message]</p>
+  </body>
+</html>

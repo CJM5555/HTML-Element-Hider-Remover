@@ -1,0 +1,26 @@
+{
+  "name": "HTML Element Hider/Remover",
+  "version": "1.0.0.0",
+  "manifest_version": 3,
+  "description": "An extension to hide irritating HTML element (PopUp/Cookie Consent etc) on page.",
+  "icons": {
+      "16": "icons/icon.jpg",
+      "32": "icons/icon.jpg",
+      "48": "icons/icon.jpg",
+      "128": "icons/icon.jpg"
+  },
+  "action": {
+      "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+      {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["lib/jquery.min.js","content-scripts/content.js"]
+      }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
